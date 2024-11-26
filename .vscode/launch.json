@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "com.workforce.automation.reusablecomponents.Test",
+            "projectName": "WorkforceAutomation2.0"
+        },
+        {
+            "type": "java",
+            "name": "PathHelper",
+            "request": "launch",
+            "mainClass": "com.workforce.automation.utilities.PathHelper",
+            "projectName": "WorkforceAutomation2.0"
+        },
+        {
+            "name": "Cucumber",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "io.cucumber.core.cli.Main",
+            "args": [
+                "--glue",
+                "classpath:com.workforce.automation.stepdefinitions","classpath:com.workforce.automation.runner",
+                "D:\\Table Management\\workspace\\WorkforceAutomation2.0\\src\\test\\resources\\FeatureFiles",
+            ]
+        }
+    ]
+}
